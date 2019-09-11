@@ -1,6 +1,91 @@
-@media (max-width: 900px) {
-  body {
-    background-color: red;
+/* VARIABLES */
+/* Color palett */
+div > div > div, nav {
+  padding: 35px;
+}
+
+#project_button, #skill_button, #interest_button {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0px;
+  font-weight: bold;
+}
+
+#project_button:hover, #skill_button:hover, #interest_button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Header menu */
+nav {
+  width: 100%;
+  background-color: #A4C9D7;
+}
+nav a {
+  color: white;
+  margin-right: 20px;
+}
+
+/* page body */
+.circle-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#main_picture {
+  text-align: center;
+}
+
+#button_div {
+  padding-top: 0px;
+}
+
+/* Page buttons */
+#interest_button {
+  background-color: #2D7F9D;
+}
+
+#skill_button {
+  background-color: #DC7684;
+}
+
+#project_button {
+  background-color: #E4CA99;
+}
+
+/* Responsiveness small screen */
+@media (max-width: 699px) {
+  nav {
+    display: grid;
+  }
+  nav a {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 993px) {
+  .row div {
+    text-align: center;
+  }
+
+  #main_picture {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+
+  .empty {
+    display: none;
+  }
+}
+/* Responsiveness larger screen */
+@media (min-width: 700px) {
+  #main_div {
+    margin-top: 20px;
+  }
+
+  .container {
+    border-radius: 10px;
   }
 }
 

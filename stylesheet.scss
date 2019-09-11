@@ -1,5 +1,124 @@
-@media(max-width: 900px) {
-  body {
-    background-color: red;
+/* VARIABLES */
+$padding: 35px;
+$margin: 20px;
+
+/* Color palett */
+$red: #DC7684;
+$wood: #E4CA99;
+$lightblue: #EAF2F4;
+$mediumblue: #A4C9D7;
+$steelblue: #2D7F9D;
+
+
+%padding-shared {
+  padding: $padding;
+}
+
+%buttons {
+  margin-right: $margin;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0px;
+  font-weight: bold;
+}
+
+%buttons_hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Header menu */
+nav {
+  width: 100%;
+  background-color: $mediumblue;
+  @extend %padding-shared;
+
+  a {
+    color: white;
+    margin-right: $margin;
+  }
+}
+
+/* page body */
+
+div > div > div {
+  @extend %padding-shared;
+}
+
+.circle-img {
+  width: 100%;
+  margin-bottom: $margin;
+}
+
+#main_picture {
+  text-align: center;
+}
+
+#button_div {
+  padding-top: 0px;
+}
+
+/* Page buttons */
+#interest_button {
+  @extend %buttons;
+  background-color: $steelblue;
+}
+
+#skill_button {
+  @extend %buttons;
+  background-color: $red;
+}
+#project_button {
+  @extend %buttons;
+  background-color: $wood;
+}
+
+#interest_button:hover {
+  @extend %buttons_hover
+}
+
+#skill_button:hover {
+  @extend %buttons_hover
+}
+
+#project_button:hover {
+  @extend %buttons_hover
+}
+
+/* Responsiveness small screen */
+@media (max-width: 699px) {
+  nav {
+    display: grid;
+
+    a {
+      margin-bottom: $margin / 2;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .row div {
+    text-align: center;
+  }
+
+  #main_picture {
+    padding-left: 3 * $padding;
+    padding-right: 3 * $padding;
+  }
+
+  .empty {
+    display: none;
+  }
+}
+
+/* Responsiveness larger screen */
+@media (min-width: 700px) {
+  #main_div {
+    margin-top: $margin;
+  }
+
+  .container {
+    border-radius: 10px;
   }
 }
