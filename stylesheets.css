@@ -24,11 +24,10 @@ nav {
   background-color: #A4C9D7;
 }
 nav a {
-  color: white;
   margin-right: 20px;
 }
 nav #activte_page {
-  color: #2D7F9D;
+  color: #DC7684;
 }
 
 /* page body */
@@ -43,16 +42,6 @@ nav #activte_page {
 
 #button_div {
   padding-top: 0px;
-}
-
-table {
-  margin-bottom: 20px;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 5px;
-  border: 2px solid #E4CA99;
 }
 
 /* Page buttons */
@@ -78,6 +67,10 @@ th, td {
   }
 }
 @media (max-width: 993px) {
+  .row div {
+    text-align: center;
+  }
+
   #main_picture {
     padding-left: 105px;
     padding-right: 105px;
@@ -98,4 +91,4 @@ th, td {
   }
 }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=stylesheets.css.map */

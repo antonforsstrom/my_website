@@ -38,6 +38,11 @@ nav {
     color: white;
     margin-right: $margin;
   }
+
+  #activte_page {
+    color: $steelblue;
+  }
+
 }
 
 /* page body */
@@ -57,6 +62,16 @@ div > div > div {
 
 #button_div {
   padding-top: 0px;
+}
+
+table {
+  margin-bottom: $margin;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: $padding / 7;
+  border: 2px solid $wood;
 }
 
 /* Page buttons */
@@ -98,10 +113,6 @@ div > div > div {
 }
 
 @media (max-width: 993px) {
-  .row div {
-    text-align: center;
-  }
-
   #main_picture {
     padding-left: 3 * $padding;
     padding-right: 3 * $padding;
